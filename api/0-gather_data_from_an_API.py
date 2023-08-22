@@ -1,16 +1,11 @@
 #!/usr/bin/python3
-"""
-Method to given employee ID,
-returns information about his/her TODO list progress
-"""
+"""Script to return info about todo list progress"""
 from requests import get
 from sys import argv
 
 
 def information_employee():
-    """
-    Returns information about employees
-    """
+    """Returns information about employees"""
     id_employee = int(argv[1])
     id_employee = int(argv[1])
     employee_name = ""

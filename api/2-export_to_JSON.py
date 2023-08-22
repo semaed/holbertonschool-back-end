@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" extend your Python script to export info in the JSON format """
+"""Script to export data i  the JSON format"""
 
 
 if __name__ == "__main__":

@@ -1,17 +1,12 @@
 #!/usr/bin/python3
-"""
-Method to given employee ID,
-returns information about his/her TODO list progress
-"""
+"""Script to export data in the CSV format"""
 from requests import get
 from sys import argv
 import csv
 
 
 def information_employee():
-    """
-    Returns information about employees
-    """
+    """Returns information about employees"""
     id_employee = int(argv[1])
     employee_name = ""
     task_data = []
@@ -39,9 +34,7 @@ def information_employee():
 
 
 def export_to_csv(user_id, employee_name, task_data):
-    """
-    Exports the employee information to a CSV file
-    """
+    """Exports the employee information to a CSV file"""
     filename = f"{user_id}.csv"
 
     with open(filename, mode='w', newline='') as csvfile:
